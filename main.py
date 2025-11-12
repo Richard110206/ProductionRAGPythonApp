@@ -80,9 +80,9 @@ async def rag_query_pdf_ai(ctx: inngest.Context):
     )
 
     adapter = ai.openai.Adapter(
-    auth_key=os.getenv("DEEPSEEK_API_KEY"),
-    base_url="https://api.deepseek.com/v1",
-    model="deepseek-chat"
+    auth_key=os.getenv("LLM_API_KEY"),
+    base_url=os.getenv("LLM_BASE_URL"), 
+    model=os.getenv("LLM_MODEL")   
     )
 
     res = await ctx.step.ai.infer(

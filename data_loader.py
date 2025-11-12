@@ -7,11 +7,12 @@ import os
 load_dotenv()
 
 client = OpenAI(
-    base_url="https://api.siliconflow.cn/v1",
-    api_key=os.getenv("SILICONFLOW_API_KEY")
+    base_url=os.getenv("EMBEDDING_BASE_URL"), 
+    api_key=os.getenv("EMBEDDING_API_KEY") 
 )
-EMBED_MODEL = "BAAI/bge-m3"
-EMBED_DIM = 3072
+
+EMBED_MODEL = os.getenv("EMBED_MODEL")
+EMBED_DIM = 1024
 
 splitter = SentenceSplitter(chunk_size=1000, chunk_overlap=200)
 
