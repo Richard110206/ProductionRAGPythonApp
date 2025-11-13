@@ -1,13 +1,11 @@
 ## ProductionRAGPythonApp
-![Python](https://img.shields.io/badge/Python-%3E%3D3.13-blue.svg)
-![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.116.1-green.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-%3E%3D1.49.1-red.svg)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-%3E%3D0.35.0-purple.svg)
-![inngest](https://img.shields.io/badge/inngest-%3E%3D0.5.6-orange.svg)
-![llama-index-core](https://img.shields.io/badge/llama--index--core-%3E%3D0.14.0-yellow.svg)
-![openai](https://img.shields.io/badge/openai-%3E%3D1.107.0-blue.svg)
-![qdrant-client](https://img.shields.io/badge/qdrant--client-%3E%3D1.15.1-indigo.svg)
-![python-dotenv](https://img.shields.io/badge/python--dotenv-%3E%3D1.1.1-lightgrey.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-red.svg)
+![DeepSeek](https://img.shields.io/badge/LLM-DeepSeek-blueviolet.svg)
+![BAAI/bge-m3](https://img.shields.io/badge/Embeddings-BAAI%2Fbge--m3-yellow.svg)
+![Vector Dimension](https://img.shields.io/badge/Vector%20Dimension-1024-blueviolet.svg)
+![Distance Metric](https://img.shields.io/badge/Distance-Cosine-blue.svg)
+![Compression](https://img.shields.io/badge/Compression-LZ4-green.svg)
+![VCS](https://img.shields.io/badge/VCS-Git-red.svg)
 
 A production-ready RAG (Retrieval-Augmented Generation) application that allows users to upload PDF files and query information from them using AI. It is specifically optimized for users in mainland China who may face difficulties accessing OpenAI API keys.For those who can use OpenAI API keys, you may refer to this repository:[ProductionGradeRAGPythonApp](https://github.com/techwithtim/ProductionGradeRAGPythonApp).And specific details on how to run the program are available on the YouTube channel in this video:[How to Build a Production-Ready RAG AI Agent in Python (Step-by-Step)](https://www.youtube.com/watch?v=AUQJ9eeP-Ls&t=4425s)
 
@@ -21,12 +19,20 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 - Streamlit frontend for user interaction
 
 ### Requirements
-
-- Python 3.10 or higher
-- Qdrant (local or cloud instance)
-- Inngest server
-- Node.js (for running Inngest CLI)
-- uv (Python package installer, optional but recommended)
+![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.116.1-green.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-%3E%3D1.49.1-red.svg)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-%3E%3D0.35.0-purple.svg)
+![inngest](https://img.shields.io/badge/inngest-%3E%3D0.5.6-orange.svg)
+![llama-index-core](https://img.shields.io/badge/llama--index--core-%3E%3D0.14.0-yellow.svg)
+![llama-index-readers-file](https://img.shields.io/badge/llama--index--readers--file-%3E%3D0.5.4-blue.svg)
+![openai](https://img.shields.io/badge/openai-%3E%3D1.107.0-blue.svg)
+![python-dotenv](https://img.shields.io/badge/python--dotenv-%3E%3D1.1.1-lightgrey.svg)
+![qdrant-client](https://img.shields.io/badge/qdrant--client-%3E%3D1.15.1-indigo.svg)
+- Python 3.10 or higher ![Python](https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg)
+- Qdrant (local or cloud instance) ![Qdrant](https://img.shields.io/badge/Qdrant-Client%20%3E%3D1.15.1-indigo.svg)
+- Inngest server ![Inngest](https://img.shields.io/badge/Inngest-%3E%3D0.5.6-orange.svg)
+- Node.js (for running Inngest CLI) ![Node.js](https://img.shields.io/badge/Node.js-Required-green.svg)
+- uv (Python package installer, optional but recommended) ![uv](https://img.shields.io/badge/uv-Optional-lightgrey.svg)
 
 ### Environment Setup
 
