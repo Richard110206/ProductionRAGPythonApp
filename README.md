@@ -40,11 +40,37 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 
 1. Create a `.env` file in the root directory with the following variables:
 ``` plaintext
-SILICONFLOW_API_KEY=your_siliconflow_api_key   # or API for other text embedding models
-DEEPSEEK_API_KEY=your_deepseek_api_key   # or any AI capable of conversational interactions
+# API key for your text embedding service (replace with your actual key)
+EMBEDDING_API_KEY=your_embedding_api_key_here
+
+# Base URL of your text embedding service (adjust based on your provider)
+EMBEDDING_BASE_URL=your_embedding_service_base_url
+
+# Name of the embedding model to use (e.g., BAAI/bge-m3 or other compatible models)
+EMBED_MODEL=your_preferred_embedding_model
+
+# API key for your Large Language Model (replace with your actual key)
+LLM_API_KEY=your_llm_api_key_here
+
+# Base URL of your LLM service (adjust based on your LLM provider)
+LLM_BASE_URL=your_llm_service_base_url
+
+# Name of the LLM to use (e.g., deepseek-chat or other compatible models)
+LLM_MODEL=your_preferred_llm_model
+
+# Inngest server base URL (typically remains as localhost for local development)
 INNGEST_API_BASE=http://localhost:8288
 ```
-
+for example：
+```bash
+EMBEDDING_API_KEY=your_siliconflow_api_key
+EMBEDDING_BASE_URL=https://api.siliconflow.cn/v1
+EMBED_MODEL=BAAI/bge-m3
+LLM_API_KEY=your_deepseek_api_key
+LLM_BASE_URL=https://api.deepseek.com/v1
+LLM_MODEL=deepseek-chat
+INNGEST_API_BASE=http://localhost:8288
+```
 ### Installation
 
 **1. Clone the repository:**
@@ -52,7 +78,7 @@ INNGEST_API_BASE=http://localhost:8288
  git clone https://github.com/Richard110206/ProductionRAGPythonApp.git
  cd ProductionRAGPythonApp
 ```
-Create and activate a virtual environment:
+**2. Create and activate a virtual environment:**
 ```bash
 python -m venv .venv
 
@@ -62,7 +88,7 @@ python -m venv .venv
 # On macOS/Linux
 source .venv/bin/activate
 ```
-Install dependencies using pip:
+**3. Install dependencies using pip:**
 ```bash
 pip install .
 ```
