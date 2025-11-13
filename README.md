@@ -20,9 +20,6 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 
 ### Requirements
 
-### Requirements
-
-### Requirements
 
 | Dependency               | Version Requirement | Status Badge                                  |
 |--------------------------|---------------------|-----------------------------------------------|
