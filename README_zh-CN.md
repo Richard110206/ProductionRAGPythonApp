@@ -149,13 +149,15 @@ uv run streamlit run ./streamlit_app.py
 
 ### 🔍 工作流详情
 **1. PDF 数据摄入：**
-上传的 PDF 通过 SentenceSplitter 分割为文本块（块大小：1000，重叠度：200）
-文本块通过 SiliconFlow 的 BAAI/bge-m3 模型转换为嵌入向量
-嵌入向量与元数据一起存储在 Qdrant 向量数据库中
+- 上传的 PDF 通过 SentenceSplitter 分割为文本块（块大小：1000，重叠度：200）
+- 文本块通过 SiliconFlow 的 BAAI/bge-m3 模型转换为嵌入向量
+- 嵌入向量与元数据一起存储在 Qdrant 向量数据库中
+
 **2. 查询处理：**
-用户问题转换为嵌入向量
-从 Qdrant 检索相关文本块（可通过 top_k 参数配置）
-DeepSeek LLM 基于检索到的上下文生成答案
+- 用户问题转换为嵌入向量
+- 从 Qdrant 检索相关文本块（可通过 top_k 参数配置）
+- DeepSeek LLM 基于检索到的上下文生成答案
+
 ### 🏗️ 架构设计
 - 前端：Streamlit（用户交互界面）
 - 后端：FastAPI（API 请求处理）
@@ -168,3 +170,4 @@ DeepSeek LLM 基于检索到的上下文生成答案
 2. 应用运行期间确保 Docker 容器保持运行状态
 ### 🤝 贡献指南
 欢迎贡献代码！请随时提交 Pull Request。
+
