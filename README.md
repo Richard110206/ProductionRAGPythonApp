@@ -7,6 +7,8 @@
 ![Compression](https://img.shields.io/badge/Compression-LZ4-green.svg)
 ![VCS](https://img.shields.io/badge/VCS-Git-red.svg)
 
+[中文版本](README_zh-CN.md) | [English Version](README.md)
+
 A production-ready RAG (Retrieval-Augmented Generation) application that allows users to upload PDF files and query information from them using AI. It is specifically optimized for users in mainland China who may face difficulties accessing OpenAI API keys.For those who can use OpenAI API keys, you may refer to this repository:[ProductionGradeRAGPythonApp](https://github.com/techwithtim/ProductionGradeRAGPythonApp).And specific details on how to run the program are available on the YouTube channel in this video:[How to Build a Production-Ready RAG AI Agent in Python (Step-by-Step)](https://www.youtube.com/watch?v=AUQJ9eeP-Ls&t=4425s)
 
 ### 🚀 Features
