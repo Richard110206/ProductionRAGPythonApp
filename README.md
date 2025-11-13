@@ -19,18 +19,25 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 - Streamlit frontend for user interaction
 
 ### Requirements
-![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.116.1-green.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-%3E%3D1.49.1-red.svg)
-![Uvicorn](https://img.shields.io/badge/Uvicorn-%3E%3D0.35.0-purple.svg)
-![llama-index-core](https://img.shields.io/badge/llama--index--core-%3E%3D0.14.0-yellow.svg)
-![llama-index-readers-file](https://img.shields.io/badge/llama--index--readers--file-%3E%3D0.5.4-blue.svg)
-![openai](https://img.shields.io/badge/openai-%3E%3D1.107.0-blue.svg)
-![python-dotenv](https://img.shields.io/badge/python--dotenv-%3E%3D1.1.1-lightgrey.svg)
-- Python 3.10 or higher ![Python](https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg)
-- Qdrant (local or cloud instance) ![Qdrant](https://img.shields.io/badge/Qdrant-Client%20%3E%3D1.15.1-indigo.svg)
-- Inngest server ![Inngest](https://img.shields.io/badge/Inngest-%3E%3D0.5.6-orange.svg)
-- Node.js (for running Inngest CLI) ![Node.js](https://img.shields.io/badge/Node.js-Required-green.svg)
-- uv (Python package installer, optional but recommended) ![uv](https://img.shields.io/badge/uv-Optional-lightgrey.svg)
+
+### Requirements
+
+### Requirements
+
+| Dependency               | Version Requirement | Status Badge                                  |
+|--------------------------|---------------------|-----------------------------------------------|
+| FastAPI                  | ≥0.116.1            | ![FastAPI](https://img.shields.io/badge/FastAPI-%3E%3D0.116.1-green.svg) |
+| Streamlit                | ≥1.49.1             | ![Streamlit](https://img.shields.io/badge/Streamlit-%3E%3D1.49.1-red.svg) |
+| Uvicorn                  | ≥0.35.0             | ![Uvicorn](https://img.shields.io/badge/Uvicorn-%3E%3D0.35.0-purple.svg) |
+| llama-index-core         | ≥0.14.0             | ![llama-index-core](https://img.shields.io/badge/llama--index--core-%3E%3D0.14.0-yellow.svg) |
+| llama-index-readers-file | ≥0.5.4              | ![llama-index-readers-file](https://img.shields.io/badge/llama--index--readers--file-%3E%3D0.5.4-blue.svg) |
+| openai                   | ≥1.107.0            | ![openai](https://img.shields.io/badge/openai-%3E%3D1.107.0-blue.svg) |
+| python-dotenv            | ≥1.1.1              | ![python-dotenv](https://img.shields.io/badge/python--dotenv-%3E%3D1.1.1-lightgrey.svg) |
+| Python                   | ≥3.10               | ![Python](https://img.shields.io/badge/Python-%3E%3D3.10-blue.svg) |
+| Qdrant Client            | ≥1.15.1             | ![Qdrant](https://img.shields.io/badge/Qdrant-Client%20%3E%3D1.15.1-indigo.svg) |
+| Inngest                  | ≥0.5.6              | ![Inngest](https://img.shields.io/badge/Inngest-%3E%3D0.5.6-orange.svg) |
+| Node.js                  | Required            | ![Node.js](https://img.shields.io/badge/Node.js-Required-green.svg) |
+| uv                       | Optional            | ![uv](https://img.shields.io/badge/uv-Optional-lightgrey.svg) |
 
 ### Environment Setup
 
