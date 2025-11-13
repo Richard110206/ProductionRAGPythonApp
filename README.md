@@ -9,7 +9,7 @@
 
 A production-ready RAG (Retrieval-Augmented Generation) application that allows users to upload PDF files and query information from them using AI. It is specifically optimized for users in mainland China who may face difficulties accessing OpenAI API keys.For those who can use OpenAI API keys, you may refer to this repository:[ProductionGradeRAGPythonApp](https://github.com/techwithtim/ProductionGradeRAGPythonApp).And specific details on how to run the program are available on the YouTube channel in this video:[How to Build a Production-Ready RAG AI Agent in Python (Step-by-Step)](https://www.youtube.com/watch?v=AUQJ9eeP-Ls&t=4425s)
 
-### Features
+### 🚀 Features
 
 - PDF upload and automatic text chunking
 - Vector storage using Qdrant
@@ -18,7 +18,7 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 - FastAPI backend with Inngest workflow management
 - Streamlit frontend for user interaction
 
-### Requirements
+### 📋 Requirements
 
 
 | Dependency               | Version Requirement | Status Badge                                  |
@@ -36,7 +36,7 @@ A production-ready RAG (Retrieval-Augmented Generation) application that allows 
 | Node.js                  | Required            | ![Node.js](https://img.shields.io/badge/Node.js-Required-green.svg) |
 | uv                       | Optional            | ![uv](https://img.shields.io/badge/uv-Optional-lightgrey.svg) |
 
-### Environment Setup
+### 🔧 Environment Setup
 
 1. Create a `.env` file in the root directory with the following variables:
 ``` plaintext
@@ -71,7 +71,7 @@ LLM_BASE_URL=https://api.deepseek.com/v1
 LLM_MODEL=deepseek-chat
 INNGEST_API_BASE=http://localhost:8288
 ```
-### Installation
+### 🛠️ Installation
 
 **1. Clone the repository:**
  ```bash
@@ -96,11 +96,11 @@ Or using uv (recommended for faster installation):
 ```bash
 uv pip install .
 ```
-Install Inngest CLI (required for workflow management):
+**4. Install Inngest CLI (required for workflow management):**
 ```bash
 npm install -g inngest-cli
 ```
-### Running the Application
+### ▶️ Running the Application
 The application requires three services to be running: Qdrant, Inngest server, and the application itself.
 
 **1. Start Qdrant**
@@ -138,14 +138,14 @@ uv run streamlit run .\streamlit_app.py
 # On macOS/Linux
 uv run streamlit run ./streamlit_app.py
 ```
-### Usage
+### 📖 Usage
 1. Access the Streamlit interface at `http://localhost:8501`
 2. Upload PDF files using the uploader
 3. Wait for the ingestion process to complete
 4. Ask questions about the content of your uploaded PDFs
 5. View the AI-generated answers along with source information
 
-### Workflow Details
+### 🔍 Workflow Details
 **1. PDF Ingestion:**
 - Uploaded PDFs are split into text chunks using SentenceSplitter (chunk size: 1000, overlap: 200)
 - Text chunks are converted to embeddings using BAAI/bge-m3 model via SiliconFlow
@@ -154,7 +154,7 @@ uv run streamlit run ./streamlit_app.py
 - User questions are converted to embeddings
 - Relevant text chunks are retrieved from Qdrant (configurable via top_k parameter)
 - DeepSeek LLM generates answers based on retrieved context
-### Architecture
+### 🏗️ Architecture
 - Frontend: Streamlit for user interaction
 - Backend: FastAPI for handling API requests
 - Workflow: Inngest for managing background jobs (PDF ingestion)
@@ -162,6 +162,10 @@ uv run streamlit run ./streamlit_app.py
 - Embeddings: BAAI/bge-m3 model via SiliconFlow API
 - LLM: DeepSeek for generating answers from retrieved contexts
 
-## Notes
+### ⚠️ Notes
 1. Do not start the server while connected to a VPN.
 2. Ensure the Docker container remains running during application execution.
+
+### 🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
