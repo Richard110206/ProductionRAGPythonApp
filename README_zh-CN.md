@@ -72,6 +72,13 @@ LLM_BASE_URL=https://api.deepseek.com/v1
 LLM_MODEL=deepseek-chat
 INNGEST_API_BASE=http://localhost:8288
 ```
+相关的大模型API KEY可以参访下面的网站进行获取：
+
+- [硅基流动官网](https://cloud.siliconflow.cn/me/models)
+
+- [deepseek官网](https://www.deepseek.com/)
+
+  
 ### 🛠️ 安装步骤
 **1. 克隆仓库：**
 ```bash
@@ -170,4 +177,5 @@ uv run streamlit run ./streamlit_app.py
 2. 应用运行期间确保 Docker 容器保持运行状态
 ### 🤝 贡献指南
 欢迎贡献代码！请随时提交 Pull Request。
+
 
