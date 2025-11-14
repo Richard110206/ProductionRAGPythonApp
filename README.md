@@ -74,8 +74,11 @@ LLM_MODEL=deepseek-chat
 INNGEST_API_BASE=http://localhost:8288
 ```
 
-[siliconflow official website](https://cloud.siliconflow.cn/me/models)
-[deepseek official website](https://www.deepseek.com/)
+Relevant API keys are available on the following websites:
+
+- [siliconflow official website](https://cloud.siliconflow.cn/me/models)
+
+- [deepseek official website](https://www.deepseek.com/)
 
 ### 🛠️ Installation
 
